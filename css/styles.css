@@ -63,12 +63,22 @@ body {
   color: var(--second-color);
 }
 .hero-btn {
-  font-family: "Inter", sans-serif;
-  font-style: normal;
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: calc(19 / 16);
   color: var(--second-color);
+  background: linear-gradient(90.03deg, #00c5eb -1.97%, #b544fe 89.43%);
+}
+.hero-btn:hover,
+.hero-btn:focus {
+  border: 2px solid;
+  border-image-source: linear-gradient(
+    90.03deg,
+    #00c5eb -1.97%,
+    #b544fe 89.43%
+  );
+  border-image-slice: 1;
 }
 /* ----------------------------------- Section 2  KEY FEATURES-------------------------------------- */
 .features {
@@ -213,13 +223,24 @@ body {
 
 .footer-btn {
   font-family: inherit;
-  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: calc(19 / 16);
-
   color: var(--second-color);
+  background: linear-gradient(90.03deg, #00c5eb -1.97%, #b544fe 89.43%);
 }
+
+.footer-btn:hover,
+.footer-btn:focus {
+  border: 2px solid;
+  border-image-source: linear-gradient(
+    90.03deg,
+    #00c5eb -1.97%,
+    #b544fe 89.43%
+  );
+  border-image-slice: 1;
+}
+
 .footer-text {
   font-weight: 500;
   font-size: 14px;
