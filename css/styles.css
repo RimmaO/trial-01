@@ -31,7 +31,7 @@ img {
 }
 
 .container {
-  width: 1280px;
+  width: calc(1280px + 32px);
   padding-left: 16px;
   padding-right: 16px;
   margin-left: auto;
@@ -49,11 +49,10 @@ img {
 /* -----------------------Header: logo, navigation --------------------------------------- */
 .header {
   background-color: #06071b;
-}
-.header-container {
   padding-top: 19px;
   padding-bottom: 19px;
-
+}
+.header-container {
   display: flex;
 }
 
@@ -87,12 +86,11 @@ img {
 /* ------------------------ Section 1 (HERO) Introducing Mobileapp------------------------------ */
 .hero {
   background-color: #06071b;
+  padding-top: 145px;
+  padding-bottom: 146px;
 }
 
 .hero-container {
-  padding-top: 145px;
-  padding-bottom: 146px;
-
   display: flex;
   flex-direction: column;
 }
@@ -150,16 +148,16 @@ img {
 }
 /* ----------------------------------- Section 2  KEY FEATURES-------------------------------------- */
 .features {
-  background-color: ;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .features-container {
-  width: 971px;
-  padding-top: 106px;
-  padding-bottom: 100px;
+  width: calc(971px + 32px);
 
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .features-title {
@@ -180,12 +178,23 @@ img {
   max-width: 886px;
 }
 
+.features-wrap {
+  display: flex;
+}
 .features-list {
+}
+.features-list-order {
+  order: 1;
 }
 
 .features-item {
+  width: calc((100% - 25px - 32 px) / 3);
+}
+
+.features-item:not(:last-child) {
   margin-bottom: 80px;
 }
+
 .features-item-title {
   font-size: 16px;
   line-height: 1.5;
@@ -204,12 +213,11 @@ img {
 /* -----------------------------  Section 3 WATCH THE VIDEO------------------------------ */
 .video {
   background-color: #06071b;
+  padding-top: 60px;
+  padding-bottom: 96px;
 }
 
 .video-container {
-  padding-top: 60px;
-  padding-bottom: 60px;
-
   display: flex;
   flex-direction: column;
 }
@@ -233,14 +241,15 @@ img {
 /* -----------------------------  Section 4 OUR TEAM------------------------------ */
 .team {
   background-color: blanchedalmond;
+  padding-top: 80px;
 }
 
 .team-container {
-  width: 1236px;
-  padding-top: 80px;
+  width: calc(1236px + 32px);
 
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .team-title {
@@ -264,7 +273,8 @@ img {
 .team-list {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  width: ((100% - 96px) / 4);
+  gap: 32px;
 }
 .team-item {
 }
@@ -272,6 +282,8 @@ img {
   font-weight: 700;
   font-size: 18px;
   line-height: calc(22 / 18);
+  text-align: center;
+
   color: var(--second-color);
 }
 
@@ -279,19 +291,22 @@ img {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.7;
+  text-align: center;
+
   color: var(--second-color);
 }
 /* -----------------------------  Section 5 WHAT OUR COSTUMER’S SAY------------------------------ */
 .testimonials {
+  padding-top: 80px;
+  padding-bottom: 127px;
 }
 
 .testimonials-container {
-  width: 1236px;
-  padding-top: 80px;
-  padding-bottom: 100px;
+  width: calc(886px + 32px);
 
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .testimonials-title {
@@ -308,6 +323,7 @@ img {
   text-align: center;
 
   margin-top: 20px;
+  margin-bottom: 12px;
 }
 
 .costumer-position {
@@ -316,7 +332,7 @@ img {
   line-height: calc(24 / 14);
   text-align: center;
 
-  margin-bottom: 12px;
+  margin-bottom: 40px;
 }
 
 .costumer-testimonials {
@@ -325,18 +341,16 @@ img {
   line-height: calc(24 / 16);
   text-align: center;
 
-  margin-bottom: 40px;
   max-width: 886px;
 }
 /* ---------------------------- Footer: adress, button --------------------------------------- */
 .footer {
   background-color: #06071b;
+  padding-top: 80px;
+  padding-bottom: 21px;
 }
 
 .footer-container {
-  padding-top: 80px;
-  padding-bottom: 20px;
-
   display: flex;
   flex-direction: column;
 }
@@ -344,6 +358,7 @@ img {
 .footer-title {
   font-size: 24px;
   line-height: calc(29 / 24);
+
   color: var(--second-color);
 
   text-align: center;
@@ -353,6 +368,7 @@ img {
   font-weight: 500;
   font-size: 24px;
   line-height: calc(29 / 24);
+
   color: var(--second-color);
 
   margin-bottom: 20px;
