@@ -533,6 +533,23 @@ img {
   border-radius: 50px;
 }
 
+/* .icon-regular {
+  transition: 400ms;
+}
+
+.footer-soc-link:hover .footer-soc-icon & {
+  opacity: 0;
+}
+
+.icon-hovered {
+  opacity: 0;
+  transition: 400ms;
+}
+
+.footer-soc-link:hover .footer-soc-icon & {
+  opacity: 1;
+} */
+
 .footer-soc-icon:is(:hover, :focus) {
   /* stroke: 1px solid transparent;
   background: linear-gradient(90.03deg, #00c5eb -1.97%, #b544fe 89.43%);
