@@ -28,6 +28,8 @@ button {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .container {
@@ -54,6 +56,11 @@ img {
 }
 .header-container {
   display: flex;
+  background-image: linear-gradient(
+    90.03deg,
+    rgba(0, 197, 235, 0.3) -1.97%,
+    rgba(181, 68, 254, 0.3) 89.43%
+  );
 }
 
 .header-navigation {
@@ -88,6 +95,11 @@ img {
   background-color: #06071b;
   padding-top: 145px;
   padding-bottom: 146px;
+
+  /* background-image: url(../images/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: 895px 553px;
+  background-position: left 339px top 167px; */
 }
 
 .hero-container {
@@ -130,26 +142,39 @@ img {
   font-weight: 700;
   font-size: 16px;
   line-height: calc(19 / 16);
-  color: var(--second-color);
-  background: linear-gradient(90.03deg, #00c5eb -1.97%, #b544fe 89.43%);
 
   margin-right: auto;
+  min-width: 200px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+
+  border-radius: 5px;
+
+  color: var(--second-color);
+  background-image: linear-gradient(90.03deg, #00c5eb -1.97%, #b544fe 89.43%);
 }
 
 .hero-btn:hover,
 .hero-btn:focus {
-  border: 2px solid;
-  border-image-source: linear-gradient(
-    90.03deg,
-    #00c5eb -1.97%,
-    #b544fe 89.43%
-  );
-  border-image-slice: 1;
+  /* background: #06071b; */
+  border: 1px solid transparent;
+  background: linear-gradient(90.03deg, #00c5eb -1.97%, #b544fe 89.43%);
+  box-shadow: inset 0px 0px 0px 100vw #06071b;
+  border-radius: 5px;
 }
+
 /* ----------------------------------- Section 2  KEY FEATURES-------------------------------------- */
 .features {
   padding-top: 100px;
   padding-bottom: 100px;
+
+  background-image: url(../images/feature.jpg),
+    linear-gradient(
+      90.03deg,
+      rgba(0, 197, 235, 0.2) -1.97%,
+      rgba(181, 68, 254, 0.2) 89.43%
+    );
+  background-repeat: no-repeat;
 }
 
 .features-container {
@@ -182,6 +207,9 @@ img {
   display: flex;
 }
 .features-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .features-list-order {
   order: 1;
@@ -198,8 +226,16 @@ img {
 .features-item-title {
   font-size: 16px;
   line-height: 1.5;
-
   margin-bottom: 13px;
+}
+
+.features-item-title::before {
+  content: "";
+  width: 28px;
+  height: 28px;
+
+  background-image: url(../marker.svg);
+  display: inline-block;
 }
 
 .features-item-text {
@@ -238,10 +274,45 @@ img {
 
   max-width: 479px;
 }
+
+.video-app-list {
+  display: flex;
+  gap: 20px;
+
+  margin-top: 40px;
+  margin-bottom: 98px;
+}
+
+.video-app-item {
+  display: flex;
+
+  width: 60px;
+  height: 60px;
+}
+.video-app-link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image: linear-gradient(90.03deg, #00c5eb -1.97%, #b544fe 89.43%);
+  color: rgba(255, 255, 255, 1);
+  fill: currentColor;
+}
+
+.video-app-icon {
+}
 /* -----------------------------  Section 4 OUR TEAM------------------------------ */
 .team {
-  background-color: blanchedalmond;
   padding-top: 80px;
+  background-image: linear-gradient(
+    90.03deg,
+    rgba(0, 197, 235, 0.2) -1.97%,
+    rgba(181, 68, 254, 0.2) 89.43%
+  );
 }
 
 .team-container {
@@ -277,12 +348,27 @@ img {
   gap: 32px;
 }
 .team-item {
+  padding: 14px 12px 12px;
+  background: linear-gradient(
+      312.87deg,
+      rgba(0, 197, 235, 0.5) -0.2%,
+      rgba(181, 68, 254, 0.5) 112.66%
+    ),
+    #06071b;
+
+  border-radius: 15px;
+}
+
+.team-item > img {
+  border-radius: 10px;
 }
 .team-item-title {
   font-weight: 700;
   font-size: 18px;
   line-height: calc(22 / 18);
   text-align: center;
+
+  margin-top: 20px;
 
   color: var(--second-color);
 }
@@ -293,12 +379,19 @@ img {
   line-height: 1.7;
   text-align: center;
 
+  margin-top: 12px;
+
   color: var(--second-color);
 }
 /* -----------------------------  Section 5 WHAT OUR COSTUMER’S SAY------------------------------ */
 .testimonials {
   padding-top: 80px;
-  padding-bottom: 127px;
+  padding-bottom: 80px;
+  background-image: linear-gradient(
+    90.03deg,
+    rgba(0, 197, 235, 0.2) -1.97%,
+    rgba(181, 68, 254, 0.2) 89.43%
+  );
 }
 
 .testimonials-container {
@@ -316,6 +409,10 @@ img {
 
   margin-bottom: 40px;
 }
+.testimonials-title + img {
+  border-radius: 50%;
+}
+
 .costumer-name {
   font-weight: 700;
   font-size: 18px;
@@ -342,6 +439,24 @@ img {
   text-align: center;
 
   max-width: 886px;
+}
+.costumers-points-list {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.costumers-points-item {
+  margin-top: 40px;
+  border-radius: 50px;
+  width: 6px;
+  height: 6px;
+
+  background-color: #939eac;
+}
+
+.costumers-points-item:is(:hover, :focus) {
+  background-color: #06071b;
 }
 /* ---------------------------- Footer: adress, button --------------------------------------- */
 .footer {
@@ -383,6 +498,47 @@ img {
   max-width: 500px;
   margin-bottom: 80px;
 }
+
+.footer-soc-list {
+  display: flex;
+
+  gap: 14px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.footer-soc-item {
+  display: flex;
+
+  width: 40px;
+  height: 40px;
+}
+.footer-soc-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+
+  border-radius: 50px;
+  background-image: linear-gradient(90.03deg, #00c5eb -1.97%, #b544fe 89.43%);
+  color: var(--second-color);
+  fill: currentColor;
+}
+
+.footer-soc-link:is(:hover, :focus) {
+  border: 1px solid transparent;
+  background: linear-gradient(90.03deg, #00c5eb -1.97%, #b544fe 89.43%);
+  box-shadow: inset 0px 0px 0px 100vw #06071b;
+  border-radius: 50px;
+}
+
+.footer-soc-icon:is(:hover, :focus) {
+  /* stroke: 1px solid transparent;
+  background: linear-gradient(90.03deg, #00c5eb -1.97%, #b544fe 89.43%);
+  box-shadow: inset 0px 0px 0px 100vw #06071b; */
+}
+
 .footer-adress {
 }
 .footer-adress-list {
@@ -405,23 +561,31 @@ img {
   font-weight: 700;
   font-size: 16px;
   line-height: calc(19 / 16);
-  color: var(--second-color);
-  background: linear-gradient(90.03deg, #00c5eb -1.97%, #b544fe 89.43%);
 
+  border-radius: 5px;
   margin-left: auto;
+  min-width: 180px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin-bottom: 79px;
+
+  color: var(--second-color);
+  background-image: linear-gradient(90.03deg, #00c5eb -1.97%, #b544fe 89.43%);
 }
 
 .footer-btn:hover,
 .footer-btn:focus {
-  border: 2px solid;
-  border-image-source: linear-gradient(
-    90.03deg,
-    #00c5eb -1.97%,
-    #b544fe 89.43%
-  );
-  border-image-slice: 1;
+  border: 1px solid transparent;
+  background: linear-gradient(90.03deg, #00c5eb -1.97%, #b544fe 89.43%);
+  box-shadow: inset 0px 0px 0px 100vw #06071b;
+  border-radius: 5px;
 }
 
+.footer-border {
+  padding-top: 22px;
+  padding-bottom: 21px;
+  border-top: 1px solid #ffffff;
+}
 .footer-text {
   font-weight: 500;
   font-size: 14px;
