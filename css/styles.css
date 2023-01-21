@@ -230,12 +230,12 @@ img {
 }
 
 .features-item-title::before {
-  content: "";
+  /* content: "";
   width: 28px;
   height: 28px;
 
-  background-image: url(../marker.svg);
-  display: inline-block;
+  background-image: url(../marker.svg); 
+  display: inline-block; */
 }
 
 .features-item-text {
