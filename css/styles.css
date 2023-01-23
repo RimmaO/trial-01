@@ -174,8 +174,10 @@ img {
   padding-bottom: 100px;
   max-width: 1278px;
   margin: auto;
+  background-color: var(--gra);
 
-  background-image: url(../images/feature.png), var(--gra);
+  background-image: url(../images/vector-1.png), url(../images/feature.png),
+    url(../images/vector-2.png);
   background-position: right 443px top 337px;
   background-repeat: no-repeat;
   background-size: 396px 596px;
@@ -212,15 +214,20 @@ img {
 }
 .features-list {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-wrap: wrap;
+  row-gap: 80px;
 }
-.features-list-order {
-  order: 1;
+.features-list-one {
+  margin-right: 492px;
+  align-items: baseline;
 }
 
+.features-list-two {
+  align-items: baseline;
+}
 .features-item {
-  width: calc((100% - 25px - 32 px) / 3);
+  /* width: calc((100% - 492px) / 2); */
+  max-width: 220px;
 }
 
 .features-item:not(:last-child) {
@@ -258,10 +265,12 @@ img {
   max-width: 1278px;
   margin: auto;
 
-  background-image: url(../images/video.png);
+  background-image: url(../images/spraying-1.png), url(../images/spraying-2.png),
+    url(../images/video.png);
   background-repeat: no-repeat;
-  background-size: 478px 234px;
-  background-position: right 144px top 57px;
+  background-size: 420px 508px, 291px 58px, 478px 234px;
+  background-position: right 144px top 57px, right 237px top 58px,
+    right 144px top 57px;
 }
 
 .video-container {
