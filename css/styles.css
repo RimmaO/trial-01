@@ -101,10 +101,10 @@ img {
   max-width: 1280px;
   margin: auto;
 
-  background-image: url(../images/hero-bg.jpg);
+  background-image: url(../images/hero-bg.png);
   background-size: 895px 553px;
   background-repeat: no-repeat;
-  background-position: right 45px top 124px;
+  background-position: right 46px top 69px;
 }
 
 .hero-container {
@@ -175,7 +175,7 @@ img {
   max-width: 1278px;
   margin: auto;
 
-  background-image: url(../images/feature.jpg), var(--gra);
+  background-image: url(../images/feature.png), var(--gra);
   background-position: right 443px top 337px;
   background-repeat: no-repeat;
   background-size: 396px 596px;
@@ -205,27 +205,6 @@ img {
 
   margin-bottom: 141px;
   max-width: 886px;
-}
-
-.features-icon-list {
-  width: 304px;
-  height: 203px;
-}
-
-.features-icon-item {
-}
-.features-icon {
-  width: 100%;
-  height: 100%;
-
-  border: 205px solid;
-
-  background-image: linear-gradient(
-    90.03deg,
-    rgba(0, 197, 235, 0.2) -1.97%,
-    rgba(181, 68, 254, 0.2) 89.43%
-  );
-  background-position: left 964px top 829px;
 }
 
 .features-wrap {
@@ -279,11 +258,10 @@ img {
   max-width: 1278px;
   margin: auto;
 
-  background-image: url(../images/video.jpg);
+  background-image: url(../images/video.png);
   background-repeat: no-repeat;
   background-size: 478px 234px;
   background-position: right 144px top 57px;
-  box-shadow: 0px 4px 0px 0px rgba(18, 7, 57, 1);
 }
 
 .video-container {
@@ -417,6 +395,11 @@ img {
   padding-top: 80px;
   padding-bottom: 80px;
   background-image: var(--gra);
+
+  background-image: url(../images/costumer-1.png);
+  background-repeat: no-repeat;
+  background-size: 181px 181px;
+  background-position: top 181px center;
 }
 
 .testimonials-container {
