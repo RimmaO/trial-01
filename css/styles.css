@@ -94,17 +94,20 @@ img {
 
 /* ------------------------ Section 1 (HERO) Introducing Mobileapp------------------------------ */
 .hero {
-  background-color: #06071b;
+  /* background-color: #06071b; */
   padding-top: 145px;
   padding-bottom: 146px;
 
   max-width: 1280px;
   margin: auto;
 
-  background-image: url(../images/hero-bg.png);
-  background-size: 895px 553px;
+  background-image: url(../images/spraying-bg.png), url(../images/decor-bg.png),
+    url(../images/mobile-bg.png),
+    linear-gradient(to right, rgba(6, 7, 27, 1), rgba(6, 7, 27, 1));
+  background-size: 291px 58px, 541px 418px, 472px 553px, 1280px 556px;
   background-repeat: no-repeat;
-  background-position: right 46px top 69px;
+  background-position: left 52px top 182px, left 339px top 129px,
+    right 46px top 69px, top;
 }
 
 .hero-container {
@@ -176,8 +179,7 @@ img {
   margin: auto;
   background-color: var(--gra);
 
-  background-image: url(../images/vector-1.png), url(../images/feature.png),
-    url(../images/vector-2.png);
+  background-image: url(../images/feature.png);
   background-position: right 443px top 337px;
   background-repeat: no-repeat;
   background-size: 396px 596px;
@@ -220,6 +222,7 @@ img {
   flex-wrap: wrap;
   row-gap: 80px;
 }
+
 .features-list-one {
   margin-right: 492px;
   align-items: baseline;
@@ -233,19 +236,32 @@ img {
   max-width: 220px;
   display: flex;
   flex-direction: column;
+
+  /* position: relative; */
 }
+/* позиціонування маркера через абсолют */
+/* .features-icon {
+  position: absolute;
+  top: -40px;
+  left: -7px;
+} */
 
 .features-item-title {
   font-size: 16px;
   line-height: 1.5;
   margin-bottom: 13px;
   display: flex;
+  gap: 12px;
 }
 
 .features-item-title::before {
-  /* content: "";
+  content: "";
   width: 24px;
-  height: 24px; */
+  height: 24px;
+
+  background-image: url(../images/marker.png);
+  margin-top: -5px;
+  margin-left: -35px;
 }
 
 .features-item-text {
@@ -267,9 +283,9 @@ img {
   background-image: url(../images/spraying-1.png), url(../images/spraying-2.png),
     url(../images/video.png);
   background-repeat: no-repeat;
-  background-size: 420px 508px, 291px 58px, 478px 234px;
-  background-position: right 144px top 57px, right 237px top 58px,
-    right 144px top 57px;
+  background-size: 420px 508px, 291px 58px, 501px 282px;
+  background-position: right 121px top 60px, right 237px top 58px,
+    right 121px top 60px;
 }
 
 .video-container {
