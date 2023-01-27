@@ -56,31 +56,34 @@ img {
 }
 /* -----------------------Header: logo, navigation --------------------------------------- */
 .header {
-  background-color: #06071b;
+  position: absolute;
+  top: 26px;
+  left: 0;
+  width: 100%;
   padding-top: 19px;
   padding-bottom: 19px;
+  padding-left: 16px;
+  padding-right: 16px;
+
+  background-image: var(--gra);
 }
 .header-container {
-  display: flex;
-  background-image: var(--gra);
 }
 
 .header-navigation {
   display: flex;
-  align-items: center;
 }
 .header-logo {
   font-size: 28px;
   line-height: calc(34 / 28);
   color: var(--second-color);
-
-  margin-right: 672px;
 }
 
 .header-list {
   display: flex;
   align-items: center;
   gap: 40px;
+  margin-left: auto;
 }
 
 .header-item {
@@ -94,20 +97,21 @@ img {
 
 /* ------------------------ Section 1 (HERO) Introducing Mobileapp------------------------------ */
 .hero {
-  /* background-color: #06071b; */
-  padding-top: 145px;
+  background-color: #06071b;
+  padding-top: 243px;
   padding-bottom: 146px;
 
   max-width: 1280px;
+  min-height: 684px;
   margin: auto;
 
   background-image: url(../images/spraying-bg.png), url(../images/decor-bg.png),
     url(../images/mobile-bg.png),
     linear-gradient(to right, rgba(6, 7, 27, 1), rgba(6, 7, 27, 1));
-  background-size: 291px 58px, 541px 418px, 472px 553px, 1280px 556px;
+  background-size: 213px 29px, 541px 418px, 472px 553px, 1280px 556px;
   background-repeat: no-repeat;
-  background-position: left 52px top 182px, left 339px top 129px,
-    right 46px top 69px, top;
+  background-position: left 130px top 309px, left 339px top 227px,
+    right 92px top 222px, top;
 }
 
 .hero-container {
@@ -174,15 +178,17 @@ img {
 /* ----------------------------------- Section 2  KEY FEATURES-------------------------------------- */
 .features {
   padding-top: 100px;
-  padding-bottom: 100px;
+  padding-bottom: 105px;
   max-width: 1278px;
   margin: auto;
-  background-color: var(--gra);
+  background-color: #ffffff;
 
-  background-image: url(../images/feature.png);
-  background-position: right 443px top 337px;
+  background-image: url(../images/vector-1.png), url(../images/feature.png),
+    url(../images/vector-2.png);
+  background-position: top 79px right 373px, right 443px top 337px,
+    top 118px right 12px;
   background-repeat: no-repeat;
-  background-size: 396px 596px;
+  background-size: 1044px 824px, 396px 596px, 304px 203px;
 }
 
 .features-container {
@@ -276,7 +282,7 @@ img {
 .video {
   background-color: #06071b;
   padding-top: 60px;
-  padding-bottom: 96px;
+  padding-bottom: 98px;
   max-width: 1278px;
   margin: auto;
 
@@ -343,6 +349,7 @@ img {
 /* -----------------------------  Section 4 OUR TEAM------------------------------ */
 .team {
   padding-top: 80px;
+  padding-bottom: 80px;
   background-image: var(--gra);
 }
 
@@ -416,10 +423,9 @@ img {
 }
 /* -----------------------------  Section 5 WHAT OUR COSTUMER’S SAY------------------------------ */
 .testimonials {
-  padding-top: 80px;
   padding-bottom: 80px;
-  background-image: var(--gra);
 
+  background-color: #ffffff;
   background-image: url(../images/costumer-1.png);
   background-repeat: no-repeat;
   background-size: 181px 181px;
@@ -552,18 +558,10 @@ img {
   width: 100%;
   height: 100%;
 
-  /* border-radius: 50px;
-  background-image: linear-gradient(90.03deg, #00c5eb -1.97%, #b544fe 89.43%);
-  color: var(--second-color);
-  fill: currentColor; */
-}
+  border-radius: 50%;
 
-/* .footer-soc-link:is(:hover, :focus) {
-  border: 1px solid transparent;
-  background: linear-gradient(90.03deg, #00c5eb -1.97%, #b544fe 89.43%);
-  box-shadow: inset 0px 0px 0px 100vw #06071b;
-  border-radius: 50px;
-} */
+  background-image: linear-gradient(90.03deg, #00c5eb -1.97%, #b544fe 89.43%);
+}
 
 .icon-regular {
   transition: 400ms;
