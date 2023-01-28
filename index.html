@@ -31,7 +31,29 @@
     <header class="header">
       <div class="container header-container">
         <nav class="header-navigation">
-          <a href="./index.html" class="header-logo link"> Mobileapp </a>
+          <ul class="header-menu-list list">
+            <li class="header-menu-item">
+              <a href="./index.html" class="header-logo link"> Mobileapp </a>
+
+              <ul class="submenu list">
+                <li class="submenu-item">
+                  <a href="" class="submenu-link link">HOME</a>
+                </li>
+                <li class="submenu-item">
+                  <a href="" class="submenu-link link">FEATURES</a>
+                </li>
+                <li class="submenu-item">
+                  <a href="" class="submenu-link link">TEAM</a>
+                </li>
+                <li class="submenu-item">
+                  <a href="" class="submenu-link link">TESTIMONIALS</a>
+                </li>
+                <li class="submenu-item">
+                  <a href="" class="submenu-link link">CONTACT</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
 
           <ul class="header-list list">
             <li class="header-item">
@@ -73,8 +95,9 @@
               <p>&#62; Prasent rutrum ac nunc et</p>
             </li>
           </ul>
-          <button type="button" class="hero-btn">Download</button>
-          <!-- <img src="./images/hero.jpg" alt="hero" /> -->
+          <button type="button" class="hero-btn" data-modal-open>
+            Download
+          </button>
         </div>
       </section>
 
@@ -320,5 +343,23 @@
         </div>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal" data-modal-close>
+        <svg class="modal-icon" width="80px" height="105px">
+          <use href=""></use>
+        </svg>
+        <h3 class="modal-title">Download free plan</h3>
+        <ul class="modal-list list">
+          <li class="modal-item">
+            <p class="modal-text">Donec posuere augue venenatis, aliquet</p>
+          </li>
+          <li>
+            <p class="modal-text">Donec posuere augue venenatis, aliquet</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="./js/modal.jc"></script>
   </body>
 </html>
