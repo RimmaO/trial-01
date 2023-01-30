@@ -200,7 +200,7 @@ img {
 
   color: var(--second-color);
   background-image: linear-gradient(90.03deg, #00c5eb -1.97%, #b544fe 89.43%);
-  transition: background-image 1500ms linear, transform 1500ms linear;
+  transition: background-image 500ms linear, transform 500ms linear;
 }
 
 .hero-btn:hover,
@@ -217,14 +217,13 @@ img {
 .features {
   padding-top: 100px;
   padding-bottom: 105px;
-  max-width: 1278px;
-  margin: auto;
+
+  margin: 0 auto;
   background-color: #ffffff;
 
   background-image: url(../images/vector-1.png), url(../images/feature.png),
     url(../images/vector-2.png);
-  background-position: top 79px right 373px, right 443px top 337px,
-    top 118px right 12px;
+  background-position: left 20% top 75%, left 50% top 80%, right 20% bottom 70%;
   background-repeat: no-repeat;
   background-size: 1044px 824px, 396px 596px, 304px 203px;
 }
@@ -699,6 +698,8 @@ img {
 }
 .modal-icon {
   display: flex;
+  margin-left: auto;
+  margin-right: auto;
   align-items: center;
   justify-content: center;
   margin-bottom: 20px;
