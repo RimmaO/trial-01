@@ -73,46 +73,7 @@ img {
 .header-navigation {
   display: flex;
 }
-.header-menu-list {
-  display: flex;
-}
 
-.header-menu-item {
-  position: relative;
-}
-
-.header-menu-item:hover .submenu {
-  display: block;
-}
-
-.header-logo {
-  display: block;
-}
-
-.submenu {
-  position: absolute;
-  left: 0;
-  top: 100%;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-
-  background-image: linear-gradient(
-    90.03deg,
-    rgba(0, 197, 235, 0.2) -1.97%,
-    rgba(181, 68, 254, 0.2) 89.43%
-  );
-}
-.submenu-item {
-}
-.submenu-link {
-  padding-top: 52px;
-  margin-bottom: 36px;
-  font-size: 12px;
-  text-align: center;
-  line-height: calc(15 / 12);
-  color: var(--second-color);
-}
 .header-logo {
   font-size: 28px;
   line-height: calc(34 / 28);
@@ -210,7 +171,7 @@ img {
   background-image: var(--gra);
   box-shadow: inset 0px 0px 0px 100vw #06071b;
   border-radius: 5px;
-  transform: rotate(360deg) scale(1.5);
+  transform: scale(1.5);
 }
 
 /* ----------------------------------- Section 2  KEY FEATURES-------------------------------------- */
@@ -327,8 +288,7 @@ img {
     url(../images/video.png);
   background-repeat: no-repeat;
   background-size: 420px 508px, 291px 58px, 501px 282px;
-  background-position: right 121px top 60px, right 237px top 58px,
-    right 121px top 60px;
+  background-position: right 10% top 15%, right 80% top 40%, right 6% top 55%;
 }
 
 .video-container {
@@ -461,16 +421,17 @@ img {
 /* -----------------------------  Section 5 WHAT OUR COSTUMER’S SAY------------------------------ */
 .testimonials {
   padding-bottom: 80px;
-
   background-color: #ffffff;
-  background-image: url(../images/costumer-1.png);
+
+  background-image: url(../images/costumer-1.svg);
   background-repeat: no-repeat;
   background-size: 181px 181px;
-  background-position: top 181px center;
+  background-position: center;
 }
 
 .testimonials-container {
-  width: calc(886px + 32px);
+  width: calc(1455px + 32px);
+  min-height: 724px;
 
   display: flex;
   flex-direction: column;
