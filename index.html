@@ -31,29 +31,25 @@
     <header class="header">
       <div class="container header-container">
         <nav class="header-navigation">
-         
-            <a href="./index.html" class="header-logo link"> Mobileapp </a>
+          <a href="./index.html" class="header-logo link"> Mobileapp </a>
 
-            <ul class="header-list list">
-              <li class="header-item">
-                <a href="./index.html" class="header-link link">HOME</a>
-              </li>
-              <li class="header-item">
-                <a href="#features" class="header-link link">FEATURES</a>
-              </li>
-              <li class="header-item">
-                <a href="#team" class="header-link link">TEAM</a>
-              </li>
-              <li class="header-item">
-                <a href="#testimonials" class="header-link link"
-                  >TESTIMONIALS</a
-                >
-              </li>
-              <li class="header-item">
-                <a href="#contact" class="header-link link">CONTACT</a>
-              </li>
-            </ul>
-          </li>
+          <ul class="header-list list">
+            <li class="header-item">
+              <a href="./index.html" class="header-link link">HOME</a>
+            </li>
+            <li class="header-item">
+              <a href="#features" class="header-link link">FEATURES</a>
+            </li>
+            <li class="header-item">
+              <a href="#team" class="header-link link">TEAM</a>
+            </li>
+            <li class="header-item">
+              <a href="#testimonials" class="header-link link">TESTIMONIALS</a>
+            </li>
+            <li class="header-item">
+              <a href="#contact" class="header-link link">CONTACT</a>
+            </li>
+          </ul>
         </nav>
       </div>
     </header>
@@ -213,6 +209,7 @@
       <section class="testimonials" id="testimonials">
         <div class="container testimonials-container">
           <h2 class="testimonials-title">WHAT OUR COSTUMER’S SAY</h2>
+          <img src="./images/costumer.png" alt="costumer" />
           <h3 class="costumer-name">Jon Doe</h3>
           <p class="costumer-position">Company Inc.</p>
           <p class="costumer-testimonials">
@@ -313,7 +310,30 @@
           </ul>
         </adress>
 
-        <button type="button" class="footer-btn">SUBMIT</button>
+        <form class="footer-contacts">
+          <div class="footer-contacts-wrap">
+            <input
+              class="footer-contacts-input"
+              type="text"
+              name="user-name"
+              placeholder="Name"
+            />
+            <input
+              class="footer-contacts-input"
+              type="email"
+              name="user-email"
+              placeholder="Email"
+            />
+          </div>
+
+          <textarea
+            class="footer-contacts-message"
+            name="message"
+            placeholder="Message"
+          ></textarea>
+
+          <button type="submit" class="footer-btn">SUBMIT</button>
+        </form>
 
         <div class="footer-border">
           <p class="footer-text">
