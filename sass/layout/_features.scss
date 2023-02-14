@@ -1,0 +1,101 @@
+.features {
+  padding-top: 100px;
+  padding-bottom: 105px;
+  margin: 0 auto;
+
+  background-color: #ffffff;
+
+  background-image: url(../images/vector-1.png), url(../images/feature.png),
+    url(../images/vector-2.png);
+  background-position: left 20% top 75%, left 50% top 80%, right 20% bottom 70%;
+  background-repeat: no-repeat;
+  background-size: 1044px 824px, 396px 596px, 304px 203px;
+}
+
+.features-container {
+  width: calc(971px + 32px);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.features-title {
+  margin-bottom: 80px;
+
+  font-size: 24px;
+  line-height: calc(29 / 24);
+  text-align: center;
+}
+
+.features-item:not(:last-child) {
+  margin-bottom: 80px;
+}
+
+.features-text {
+  margin-bottom: 141px;
+  max-width: 886px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.features-wrap {
+  display: flex;
+}
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 80px;
+}
+
+.features-list-one {
+  margin-right: 492px;
+  align-items: baseline;
+}
+
+.features-list-two {
+  align-items: baseline;
+}
+.features-item {
+  max-width: 220px;
+  display: flex;
+  flex-direction: column;
+
+  /* position: relative; */
+}
+/* позиціонування маркера через абсолют */
+/* .features-icon {
+  position: absolute;
+  top: -40px;
+  left: -7px;
+} */
+
+.features-item-title {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 13px;
+  display: flex;
+  gap: 12px;
+}
+
+.features-item-title::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+
+  background-image: url(../images/marker.png);
+  margin-top: -5px;
+  margin-left: -35px;
+  background-size: cover;
+}
+
+.features-item-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(17 / 14);
+
+  max-width: 220px;
+}

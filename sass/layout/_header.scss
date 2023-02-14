@@ -1,0 +1,40 @@
+.header {
+  position: absolute;
+  top: 26px;
+  left: 0;
+  width: 100%;
+  padding-top: 19px;
+  padding-bottom: 19px;
+  padding-left: 16px;
+  padding-right: 16px;
+
+  background-image: $gra;
+}
+.header-container {
+}
+
+.header-navigation {
+  display: flex;
+}
+
+.header-logo {
+  font-size: 28px;
+  line-height: calc(34 / 28);
+  color: $second-color;
+}
+
+.header-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-left: auto;
+}
+
+.header-item {
+}
+
+.header-link {
+  font-size: 12px;
+  line-height: calc(15 / 12);
+  color: $second-color;
+}

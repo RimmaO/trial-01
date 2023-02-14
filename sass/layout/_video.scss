@@ -1,0 +1,64 @@
+.video {
+  padding-top: 60px;
+  padding-bottom: 98px;
+  max-width: 1278px;
+  margin: auto;
+
+  background-color: #06071b;
+  background-image: url(../images/spraying-1.png), url(../images/spraying-2.png),
+    url(../images/video.png);
+  background-repeat: no-repeat;
+  background-size: 420px 508px, 291px 58px, 501px 282px;
+  background-position: right 10% top 15%, right 80% top 40%, right 6% top 55%;
+}
+
+.video-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.video-title {
+  margin-bottom: 20px;
+  font-size: 24px;
+  line-height: calc(29 / 24);
+  color: $second-color;
+}
+
+.video-text {
+  max-width: 479px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  color: $second-color;
+}
+
+.video-app-list {
+  margin-top: 40px;
+  margin-bottom: 98px;
+  display: flex;
+  gap: 20px;
+}
+
+.video-app-item {
+  display: flex;
+
+  width: 60px;
+  height: 60px;
+}
+.video-app-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+
+  background-image: linear-gradient(90.03deg, #00c5eb -1.97%, #b544fe 89.43%);
+  color: rgba(255, 255, 255, 1);
+  fill: currentColor;
+}
+
+.video-app-icon {
+}

@@ -1,0 +1,25 @@
+.hero-btn {
+  margin-right: auto;
+  min-width: 200px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+
+  border-radius: 5px;
+
+  color: $second-color;
+  background-image: $gra;
+  transition: background-image 500ms linear, transform 500ms linear;
+
+  &:is(:hover, :focus) {
+    border: 1px solid transparent;
+    background-image: $gra;
+    box-shadow: inset 0px 0px 0px 100vw #06071b;
+    border-radius: 5px;
+    transform: scale(1.5);
+  }
+}

@@ -1,0 +1,49 @@
+.hero {
+  padding-top: 243px;
+  padding-bottom: 146px;
+
+  min-height: 744px;
+  margin: auto;
+
+  background-image: url(../images/spraying-bg.png), url(../images/decor-bg.png),
+    url(../images/phone-bg.png),
+    linear-gradient(to right, rgba(6, 7, 27, 1), rgba(6, 7, 27, 1));
+  background-size: 213px 29px, 541px 418px, 472px 553px, 100% 744px;
+  background-repeat: no-repeat;
+  background-position: left 20% top 309px, left 50% top 227px,
+    right 10% top 222px, top;
+}
+
+.hero-container {
+}
+
+.hero-title {
+  margin-bottom: 12px;
+
+  font-size: 40px;
+  line-height: calc(48 / 40);
+  color: $second-color;
+}
+.hero-text {
+  margin-bottom: 28px;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: calc(24 / 20);
+  color: $second-color;
+}
+
+.hero-list {
+  margin-bottom: 60px;
+}
+
+.hero-item:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.hero-item {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  color: $second-color;
+}
