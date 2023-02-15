@@ -1,4 +1,6 @@
 @import "./base/normalize";
+@import "./utils/variables";
+@import "./base/common";
 
 @import "./layout/header";
 @import "./layout/hero";
@@ -10,5 +12,3 @@
 @import "./layout/footer";
 @import "./components/backdrop";
 @import "./components/modal";
-@import "./utils/variables";
-@import "./utils/common";
