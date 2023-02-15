@@ -333,6 +333,11 @@ img {
   background-repeat: no-repeat;
   background-position: left 20% top 309px, left 50% top 227px, right 10% top 222px, top;
 }
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 480px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 480px), screen and (min-resolution: 192dpi) and (min-width: 480px), screen and (min-resolution: 2dppx) and (min-width: 480px) {
+  .hero {
+    background-image: url(../images/spraying-bg@2x.png), url(../images/decor-bg@2x.png), url(../images/phone-bg@2x.png);
+  }
+}
 
 .hero-title {
   margin-bottom: 12px;
