@@ -6,7 +6,8 @@
   width: 568px;
   height: 936px;
   padding: 32px 40px;
-
+  margin-right: auto;
+  margin-left: auto;
   background-image: linear-gradient(
     to right,
     rgba(6, 7, 27, 1),
@@ -63,7 +64,7 @@
   transition: box-shadow 500ms linear;
 
   &:is(:hover, :focus) {
-    box-shadow: 0px 0px 0px 100vw #06071b;
+    box-shadow: 0px 0px 0px 0px #06071b;
   }
 }
 
@@ -104,7 +105,7 @@
 .modal-options-wrap {
   display: flex;
   justify-content: flex-start;
-  align-items: baseline;
+  align-items: center;
   margin-bottom: 32px;
 
   border: 2px solid transparent;
@@ -118,7 +119,12 @@
   width: 244px;
   padding: 24px;
 }
+.modal-border {
+  border-right: 2px solid transparent;
 
+  background-image: $gra;
+  box-shadow: inset 0px 0px 0px 100vw #06071b;
+}
 .modal-options-item-components {
   display: flex;
 }

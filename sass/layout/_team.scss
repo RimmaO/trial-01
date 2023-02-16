@@ -36,12 +36,11 @@
 
 .team-list {
   display: flex;
-  flex-direction: row;
-  width: calc((100% - 96px) / 4);
   gap: 32px;
 }
 
 .team-item {
+  width: calc((100% - 96px) / 4);
   padding: 14px 12px 12px;
   background: linear-gradient(
       312.87deg,
