@@ -35,24 +35,26 @@ img {
   margin-right: auto;
 
   @media screen and (max-width: 767px) {
-    width: calc(280px + 20px + 20px);
+    width: 280px;
   }
 
   @media screen and (min-width: 768px) {
-    width: calc(704px + 32px + 32px);
+    width: 704px;
   }
 
   @media screen and (min-width: 1200px) {
-    width: calc(1248px + 16px + 16px);
+    width: 1248px;
+  }
+}
+.min-container {
+  @media screen and (max-width: 767px) {
+    width: 266px;
   }
 }
 
 .small-container {
-  @media screen and (max-width: 767px) {
-    width: calc(266px + 20px + 20px);
-  }
   @media screen and (min-width: 1200px) {
-    width: calc(886px + 16px + 16px);
+    width: 886px;
   }
 }
 

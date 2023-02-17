@@ -1,15 +1,30 @@
 .features {
-  padding-top: 100px;
-  padding-bottom: 105px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   margin: 0 auto;
 
   background-color: #ffffff;
 
-  background-image: url(../images/vector-1.png), url(../images/feature.png),
-    url(../images/vector-2.png);
-  background-position: left 20% top 75%, left 50% top 80%, right 20% bottom 70%;
+  background-image: url(/images/mobile-feature.png);
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: 1044px 824px, 396px 596px, 304px 203px;
+  background-size: 280px 406px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 100px;
+    padding-bottom: 80px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 105px;
+
+    background-image: url(../images/vector-1.png), url(../images/feature.png),
+      url(../images/vector-2.png);
+    background-position: left 20% top 75%, left 50% top 80%,
+      right 20% bottom 70%;
+    background-repeat: no-repeat;
+    background-size: 1044px 824px, 396px 596px, 304px 203px;
+  }
 }
 
 .features-container {
