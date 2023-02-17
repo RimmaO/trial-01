@@ -29,12 +29,31 @@ img {
 }
 
 .container {
-  max-width: 1280px;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  outline: 2px solid rebeccapurple;
+
+  @media screen and (max-width: 767px) {
+    width: calc(280px + 20px + 20px);
+  }
+
+  @media screen and (min-width: 768px) {
+    width: calc(704px + 32px + 32px);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc(1248px + 16px + 16px);
+  }
+}
+
+.small-container {
+  @media screen and (max-width: 767px) {
+    width: calc(266px + 20px + 20px);
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc(886px + 16px + 16px);
+  }
 }
 
 .list {

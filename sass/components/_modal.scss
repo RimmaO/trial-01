@@ -131,16 +131,24 @@
 
 .modal-options-item {
   display: flex;
+  align-items: center;
   column-gap: 12px;
 }
+
 .modal-options-item-components:not(:last-child) {
   margin-bottom: 20px;
 }
 
 .modal-options-title {
+  margin-bottom: 4px;
+
   font-size: 12px;
   line-height: calc(15 / 12);
   color: $second-color;
+
+  &:not(:last-child) {
+    margin-bottom: 4px;
+  }
 }
 
 .modal-options-text {

@@ -43,6 +43,42 @@
             </li>
           </ul>
         </nav>
+
+        <button type="button" class="mobile-menu-open" data-menu-open>
+          <svg class="mobile-menu-open-icon" width="24" height="14">
+            <use href="./images/icons.svg#icon-menu-open"></use>
+          </svg>
+        </button>
+
+        <div class="mobile-menu" data-menu>
+          <div class="container mobile-menu-container">
+            <button type="submit" class="mobile-menu-close-btn" data-menu-close>
+              <svg class="mobile-menu-close-icon" width="19" height="19">
+                <use href="./images/icons-modal.svg#icon-close"></use>
+              </svg>
+            </button>
+            <nav class="header-navigation">
+              <a href="./index.html" class="header-logo link"> Mobileapp </a>
+              <ul class="mobile-menu-list list">
+                <li class="mobile-menu-item">
+                  <a href="./index.html" class="mobile-menu-link link">HOME</a>
+                </li>
+                <li class="mobile-menu-item">
+                  <a href="" class="mobile-menu-link link">FEATURES</a>
+                </li>
+                <li class="mobile-menu-item">
+                  <a href="" class="mobile-menu-link link">TEAM</a>
+                </li>
+                <li class="mobile-menu-item">
+                  <a href="" class="mobile-menu-link link">TESTIMONIALS</a>
+                </li>
+                <li class="mobile-menu-item">
+                  <a href="" class="mobile-menu-link link">CONTACT</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -51,12 +87,12 @@
     <main>
       <!------------------------ Section 1 (HERO) Introducing Mobileapp------------------------------>
       <section class="hero">
-        <div class="container hero-container">
+        <div class="container hero-container small-container">
           <h1 class="hero-title">Introducing Mobileapp</h1>
           <p class="hero-text">Maecenas vitae tellus sapien. Prasent</p>
           <ul class="hero-list list">
             <li class="hero-item">
-              <p>&#62; semper scelerisque tristique a enim</p>
+              <p>&#62; Semper scelerisque tristique a enim</p>
             </li>
             <li class="hero-item">
               <p>&#62; Integer ut mattis nulla, eget vehicula elit</p>
@@ -363,6 +399,7 @@
             <svg class="modal-file-download-icon" width="80" height="105">
               <use href="./images/icons-modal.svg#icon-file-download"></use>
             </svg>
+
             <h3 class="modal-title">Download free plan</h3>
             <ul class="modal-list list">
               <li class="modal-item">
@@ -438,7 +475,7 @@
             <ul class="modal-options-list list">
               <div class="modal-options-item-components">
                 <li class="modal-options-item">
-                  <svg class="modal-file-icon" width="21" height="28">
+                  <svg class="modal-file-icon" width="28" height="28">
                     <use href="./images/icons-modal.svg#icon-file"></use>
                   </svg>
                   <div>
@@ -450,7 +487,7 @@
 
               <div class="modal-options-item-components">
                 <li class="modal-options-item">
-                  <svg class="modal-group-icon" width="21" height="28">
+                  <svg class="modal-group-icon" width="28" height="28">
                     <use href="./images/icons-modal.svg#icon-group"></use>
                   </svg>
                   <div>
@@ -462,7 +499,7 @@
 
               <div class="modal-options-item-components">
                 <li class="modal-options-item">
-                  <svg class="modal-avatar-icon" width="24" height="24">
+                  <svg class="modal-avatar-icon" width="28" height="28">
                     <use href="./images/icons-modal.svg#icon-avatar"></use>
                   </svg>
                   <div>
@@ -474,7 +511,7 @@
 
               <div class="modal-options-item-components">
                 <li class="modal-options-item">
-                  <svg class="modal-calendar-icon" width="21" height="23">
+                  <svg class="modal-calendar-icon" width="28" height="28">
                     <use href="./images/icons-modal.svg#icon-calendar" a></use>
                   </svg>
                   <div>
@@ -492,7 +529,7 @@
             <ul class="modal-options-list list">
               <div class="modal-options-item-components">
                 <li class="modal-options-item">
-                  <svg class="modal-system-icon" width="25" height="23">
+                  <svg class="modal-system-icon" width="28" height="28">
                     <use href="./images/icons-modal.svg#icon-system"></use>
                   </svg>
                   <div>
@@ -504,7 +541,7 @@
 
               <div class="modal-options-item-components">
                 <li class="modal-options-item">
-                  <svg class="modal-language-icon" width="23" height="23">
+                  <svg class="modal-language-icon" width="28" height="28">
                     <use href="./images/icons-modal.svg#icon-language"></use>
                   </svg>
                   <div>
@@ -516,7 +553,7 @@
 
               <div class="modal-options-item-components">
                 <li class="modal-options-item">
-                  <svg class="modal-weight-icon" width="21" height="21">
+                  <svg class="modal-weight-icon" width="28" height="28">
                     <use href="./images/icons-modal.svg#icon-weight"></use>
                   </svg>
                   <div>
@@ -548,6 +585,7 @@
         </button>
       </div>
     </div>
-    <script src="./js/modal.jc"></script>
+    <script src="/js/mobile-menu.js"></script>
+    <script src="/js/modal.js"></script>
   </body>
 </html>

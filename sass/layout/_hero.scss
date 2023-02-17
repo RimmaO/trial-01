@@ -1,57 +1,107 @@
 .hero {
-  padding-top: 243px;
-  padding-bottom: 146px;
+  padding-top: 182px;
+  padding-bottom: 122px;
 
-  min-height: 744px;
   margin: auto;
 
-  background-image: url(../images/spraying-bg.png), url(../images/decor-bg.png),
-    url(../images/phone-bg.png),
+  background-image: url(/images/mobile-spraying-bg.png),
+    url(/images/mobile-spraying-small-bg.png), url(/images/mobile-phone-bg.png),
     linear-gradient(to right, rgba(6, 7, 27, 1), rgba(6, 7, 27, 1));
-  background-size: 213px 29px, 541px 418px, 472px 553px, 100% 744px;
+  background-size: 499px 52px, 144px 71px, 395px 430px, 100% 568px;
   background-repeat: no-repeat;
-  background-position: left 20% top 309px, left 50% top 227px,
-    right 10% top 222px, top;
+  background-position: right 90% top 100px, left 80% bottom 130px,
+    right -50% top 100px, top;
 
-  @media screen and (min-device-pixel-ratio: 2) and (min-width: 480px),
-    screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 480px),
-    screen and (min-resolution: 192dpi) and (min-width: 480px),
-    screen and (min-resolution: 2dppx) and (min-width: 480px) {
-    & {
-      background-image: url(../images/spraying-bg@2x.png),
-        url(../images/decor-bg@2x.png), url(../images/phone-bg@2x.png);
-    }
+  @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+    screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 767px),
+    screen and (min-resolution: 192dpi) and (max-width: 767px),
+    screen and (min-resolution: 2dppx) and (max-width: 767px) {
+    background-image: url(/images/mobile-spraying-bg@2x.png),
+      url(/images/mobile-spraying-small-bg@2x.png),
+      url(/images/mobile-phone-bg@2x.png),
+      linear-gradient(to right, rgba(6, 7, 27, 1), rgba(6, 7, 27, 1));
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 142px;
+    padding-bottom: 143px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 243px;
+    padding-bottom: 146px;
+
+    background-image: url(/images/spraying-bg.png), url(/images/decor-bg.png),
+      url(/images/phone-bg.png),
+      linear-gradient(to right, rgba(6, 7, 27, 1), rgba(6, 7, 27, 1));
+    background-size: 213px 29px, 541px 418px, 472px 553px, 100% 744px;
+    background-repeat: no-repeat;
+    background-position: left 20% top 309px, left 50% top 227px,
+      right 10% top 222px, top;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+    screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px),
+    screen and (min-resolution: 192dpi) and (min-width: 1200px),
+    screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+    background-image: url(/images/spraying-bg@2x.png),
+      url(/images/decor-bg@2x.png), url(/images/phone-bg@2x.png),
+      linear-gradient(to right, rgba(6, 7, 27, 1), rgba(6, 7, 27, 1));
   }
 }
 
 .hero-title {
   margin-bottom: 12px;
 
-  font-size: 40px;
-  line-height: calc(48 / 40);
+  font-size: 24px;
+  line-height: calc(29 / 24);
   color: $second-color;
+
+  @media screen and (min-width: 767px) {
+    font-size: 40px;
+    line-height: calc(48 / 40);
+  }
 }
 
 .hero-text {
-  margin-bottom: 28px;
+  margin-bottom: 20px;
 
   font-weight: 700;
-  font-size: 20px;
-  line-height: calc(24 / 20);
+  font-size: 18px;
+  line-height: calc(22 / 18);
   color: $second-color;
+
+  @media screen and (min-width: 767px) {
+    margin-bottom: 28px;
+    font-size: 20px;
+    line-height: calc(24 / 20);
+  }
 }
 
 .hero-list {
-  margin-bottom: 60px;
+  margin-bottom: 40px;
+
+  @media screen and (min-width: 767px) {
+    margin-bottom: 60px;
+  }
 }
 
 .hero-item:not(:last-child) {
-  margin-bottom: 12px;
+  margin-bottom: 16px;
+
+  @media screen and (min-width: 767px) {
+    margin-bottom: 12px;
+  }
 }
 
 .hero-item {
   font-weight: 700;
-  font-size: 16px;
-  line-height: calc(19 / 16);
+  font-size: 12px;
+  line-height: calc(15 / 12);
   color: $second-color;
+
+  @media screen and (min-width: 767px) {
+    font-size: 16px;
+    line-height: calc(19 / 16);
+  }
 }

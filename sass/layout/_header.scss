@@ -1,13 +1,34 @@
 .header {
   position: absolute;
-  top: 26px;
+  top: 20px;
   left: 0;
   width: 100%;
-  padding-top: 19px;
-  padding-bottom: 19px;
-  padding-left: 16px;
-  padding-right: 16px;
+
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 20px;
+  padding-right: 20px;
+
   background-image: $gra;
+
+  @media screen and (min-width: 768px) {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    top: 26px;
+    padding-top: 19px;
+    padding-bottom: 19px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header-navigation {
@@ -25,6 +46,10 @@
   align-items: center;
   gap: 40px;
   margin-left: auto;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 
 .header-link {
