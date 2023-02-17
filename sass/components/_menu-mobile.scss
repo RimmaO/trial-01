@@ -20,8 +20,11 @@
   height: 100%;
   max-height: 568px;
 
-  background-color: rgba(7, 8, 28, 1);
-
+  background-image: linear-gradient(
+    90.03deg,
+    rgba(0, 197, 235, 0.2) -1.97%,
+    rgba(181, 68, 254, 0.2) 89.43%
+  );
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -41,14 +44,12 @@
   padding-right: 20px;
 
   height: 100%;
-  display: flex;
-  flex-direction: column;
 }
 
 .mobile-menu-close-btn {
   position: absolute;
-  top: 34px;
-  right: 20px;
+  top: 35px;
+  right: 12px;
 
   display: flex;
   justify-content: center;
@@ -65,7 +66,9 @@
 }
 
 .mobile-menu-list {
-  margin-bottom: auto;
+  margin-top: 52px;
+
+  text-align: center;
 }
 
 .mobile-menu-link {
@@ -82,6 +85,8 @@
 
   &:is(:hover, :focus) {
     background-image: $gra;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }
 

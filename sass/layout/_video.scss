@@ -1,15 +1,31 @@
 .video {
-  padding-top: 60px;
-  padding-bottom: 98px;
-  max-width: 1278px;
+  padding-top: 40px;
+  padding-bottom: 105px;
+  height: 629px;
   margin: auto;
 
   background-color: #06071b;
-  background-image: url(../images/spraying-1.png), url(../images/spraying-2.png),
-    url(../images/video.png);
+  background-image: url(/images/mobile-spraying-1.png),
+    url(/images/mobile-video.png);
   background-repeat: no-repeat;
-  background-size: 420px 508px, 291px 58px, 501px 282px;
-  background-position: right 10% top 15%, right 80% top 40%, right 6% top 55%;
+  background-size: 100% 296px, 266px 128px;
+  background-position: top 320px center, top 396px center;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 80px;
+    padding-bottom: 70px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 60px;
+    padding-bottom: 98px;
+
+    background-image: url(../images/spraying-1.png),
+      url(../images/spraying-2.png), url(../images/video.png);
+    background-repeat: no-repeat;
+    background-size: 420px 508px, 291px 58px, 501px 282px;
+    background-position: right 10% top 15%, right 80% top 40%, right 6% top 55%;
+  }
 }
 
 .video-container {
@@ -18,26 +34,59 @@
 }
 
 .video-title {
-  margin-bottom: 20px;
-  font-size: 24px;
-  line-height: calc(29 / 24);
+  margin-bottom: 24px;
+
+  font-size: 20px;
+  line-height: calc(24 / 20);
   color: $second-color;
+
+  @media screen and (max-width: 768px) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 20px;
+
+    font-size: 24px;
+    line-height: calc(29 / 24);
+  }
 }
 
 .video-text {
-  max-width: 479px;
-
   font-weight: 500;
-  font-size: 16px;
-  line-height: calc(19 / 16);
+  font-size: 14px;
+  line-height: calc(17 / 14);
   color: $second-color;
+
+  @media screen and (max-width: 768px) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: calc(19 / 16);
+  }
 }
 
 .video-app-list {
-  margin-top: 40px;
-  margin-bottom: 98px;
+  margin-top: 24px;
+  margin-bottom: 105px;
   display: flex;
   gap: 20px;
+
+  @media screen and (max-width: 768px) {
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-top: 20px;
+    margin-bottom: 84px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 40px;
+    margin-bottom: 98px;
+  }
 }
 
 .video-app-item {

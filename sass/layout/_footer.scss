@@ -1,8 +1,17 @@
 .footer {
-  padding-top: 80px;
-  padding-bottom: 21px;
+  padding-top: 40px;
+  padding-bottom: 22px;
 
   background-color: #06071b;
+  @media screen and (min-width: 768px) {
+    padding-top: 74px;
+    padding-bottom: 28px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 80px;
+    padding-bottom: 21px;
+  }
 }
 
 .footer-container {
@@ -10,47 +19,89 @@
   flex-direction: column;
 }
 .footer-contacts-plus-form {
-  display: flex;
-}
-.footer-contacts-soc {
-  margin-right: 140px;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 
+.footer-contacts-soc {
+  @media screen and (min-width: 1200px) {
+    margin-right: 140px;
+  }
+}
 
 .footer-contacts {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
 }
+
 .footer-contacts-wrap {
   display: flex;
-  gap: 32px;
+  flex-direction: column;
+
+  @media screen and (min-width: 1200px) {
+    gap: 32px;
+  }
 }
+
 .footer-title {
-  margin-bottom: 80px;
-  font-size: 24px;
+  margin-bottom: 40px;
+
   text-align: center;
-  line-height: calc(29 / 24);
+  font-size: 20px;
+  line-height: calc(24 / 20);
 
   color: $second-color;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 38px;
+    font-size: 24px;
+    line-height: calc(29 / 24);
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 80px;
+  }
 }
+
 .footer-caption {
   margin-bottom: 20px;
   font-weight: 500;
-  font-size: 24px;
-  line-height: calc(29 / 24);
+  font-size: 20px;
+  line-height: calc(24 / 20);
 
   color: $second-color;
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+    line-height: calc(29 / 24);
+  }
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
 }
 
 .footer-caption-text {
-  margin-bottom: 80px;
+  margin-bottom: 40px;
   max-width: 500px;
 
   font-weight: 500;
-  font-size: 16px;
-  line-height: calc(19 / 16);
+  font-size: 14px;
+  line-height: calc(17 / 14);
   color: $second-color;
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 80px;
+    font-size: 16px;
+    line-height: calc(19 / 16);
+  }
 }
 
 .footer-soc-list {
@@ -58,6 +109,10 @@
   gap: 14px;
   margin-top: 20px;
   margin-bottom: 20px;
+
+  @media screen and (max-width: 767px) {
+    justify-content: center;
+  }
 }
 
 .footer-soc-item {
@@ -92,8 +147,19 @@
 .footer-soc-link:hover .footer-soc-icon .icon-hovered {
   opacity: 1;
 }
+.footer-adress-list {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 40px;
+  }
+}
 
 .footer-adress-item {
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+}
+
+.footer-adress-item:not(:last-child) {
   margin-bottom: 12px;
 }
 .footer-adress-link {
@@ -109,14 +175,17 @@
 .footer-contacts-input {
   margin-bottom: 20px;
   padding-bottom: 12px;
-  gap: 10px;
+
+  @media screen and (min-width: 1200px) {
+    gap: 10px;
+  }
 }
 
 .footer-contacts-input,
 .footer-contacts-message {
   padding-top: 12px;
   padding-left: 8px;
-  width: 288px;
+  width: 280px;
   height: 40px;
 
   font-weight: 500;
@@ -125,6 +194,16 @@
   color: #000000;
   background: $second-color;
   border-radius: 5px;
+
+  @media screen and (max-width: 767px) {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 288px;
+  }
 }
 .footer-contacts-input::placeholder,
 .footer-contacts-message::placeholder {
@@ -133,17 +212,20 @@
 
 .footer-contacts-message {
   margin-bottom: 20px;
-  width: 608px;
+
   height: 162px;
 
   resize: none;
+  @media screen and (min-width: 1200px) {
+    width: 608px;
+  }
 }
 
 .footer-btn {
   min-width: 180px;
   padding-top: 12px;
   padding-bottom: 12px;
-  margin-bottom: 79px;
+  margin-bottom: 40px;
 
   font-family: inherit;
   font-weight: 700;
@@ -161,11 +243,21 @@
     box-shadow: inset 0px 0px 0px 100vw #06071b;
     border-radius: 5px;
   }
+
+  @media screen and (max-width: 767px) {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 79px;
+  }
 }
 
 .footer-border {
   padding-top: 22px;
-  padding-bottom: 21px;
+
   border-top: 1px solid $second-color;
 }
 

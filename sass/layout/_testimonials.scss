@@ -1,21 +1,32 @@
 .testimonials {
-  padding-bottom: 80px;
+  padding-bottom: 40px;
   background-color: $second-color;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 80px;
+  }
 }
 
 .testimonials-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  width: calc(1455px + 32px);
 }
 
 .testimonials-title {
   margin-bottom: 40px;
-  font-size: 24px;
-  line-height: calc(29 / 24);
+  font-size: 20px;
+  line-height: calc(24 / 20);
   text-align: center;
+
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+    line-height: calc(29 / 24);
+  }
 }
 
 .costumer-name {
@@ -29,21 +40,28 @@
 }
 
 .costumer-position {
-  margin-bottom: 40px;
+  margin-bottom: 24px;
 
   font-weight: 500;
   font-size: 14px;
   line-height: calc(24 / 14);
   text-align: center;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 40px;
+  }
 }
 
 .costumer-testimonials {
-  max-width: 886px;
-
   font-weight: 500;
-  font-size: 16px;
-  line-height: calc(24 / 16);
+  font-size: 14px;
+  line-height: calc(24 / 14);
   text-align: center;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: calc(24 / 16);
+  }
 }
 .costumers-points-list {
   display: flex;
