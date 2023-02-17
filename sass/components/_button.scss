@@ -1,7 +1,7 @@
 .hero-btn {
   display: block;
-  margin-right: auto;
-  min-width: 200px;
+
+  min-width: 232px;
   padding-top: 12px;
   padding-bottom: 12px;
 
@@ -23,10 +23,13 @@
     border-radius: 5px;
     transform: scale(1.5);
   }
+
   @media screen and (max-width: 767px) {
+    min-width: 200px;
     margin-left: auto;
+    margin-right: auto;
   }
-}
-.modal-btn {
-  margin-left: auto;
+  @media screen and (min-width: 767px) {
+    min-width: 200px;
+  }
 }

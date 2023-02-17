@@ -14,6 +14,12 @@
   @media screen and (min-width: 768px) {
     padding-top: 80px;
     padding-bottom: 70px;
+
+    background-image: url(/images/tablet-spraying-1.png),
+      url(/images/tablet-video.png);
+    background-repeat: no-repeat;
+    background-size: 363px 418px, 382px 184px;
+    background-position: top 257px center, top 334px center;
   }
 
   @media screen and (min-width: 1200px) {
@@ -40,7 +46,7 @@
   line-height: calc(24 / 20);
   color: $second-color;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1199px) {
     text-align: center;
   }
 
@@ -58,7 +64,7 @@
   line-height: calc(17 / 14);
   color: $second-color;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1199px) {
     text-align: center;
   }
 
@@ -74,7 +80,7 @@
   display: flex;
   gap: 20px;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1199px) {
     justify-content: center;
   }
 

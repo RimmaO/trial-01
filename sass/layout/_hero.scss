@@ -25,6 +25,23 @@
   @media screen and (min-width: 768px) {
     padding-top: 142px;
     padding-bottom: 143px;
+
+    background-image: url(/images/tablet-spraying-bg.png),
+      url(/images/tablet-decor-bg.png), url(/images/tablet-phone-bg.png),
+      linear-gradient(to right, rgba(6, 7, 27, 1), rgba(6, 7, 27, 1));
+    background-size: 291px 58px, 362px 352px, 336px 382px, 100% 640px;
+    background-repeat: no-repeat;
+    background-position: left 12% top 221px, left 37% top 227px,
+      right 7% top 182px, top;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (-webkit-min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(/images/tablet-spraying-bg@2x.png),
+        url(/images/tablet-decor-bg@2x.png), url(/images/tablet-phone-bg@2x.png),
+        linear-gradient(to right, rgba(6, 7, 27, 1), rgba(6, 7, 27, 1));
+    }
   }
 
   @media screen and (min-width: 1200px) {
