@@ -15,9 +15,9 @@
     padding-bottom: 80px;
 
     background-image: url(/images/tablet-feature.png);
-    background-position: top 289px left 23px;
+    background-position: top 289px left 30px;
     background-repeat: no-repeat;
-    background-size: 430px 670px;
+    background-size: 406px 614px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -28,7 +28,7 @@
     background-position: left 20% top 75%, left 50% top 80%,
       right 20% bottom 70%;
     background-repeat: no-repeat;
-    background-size: 1044px 824px, 396px 596px, 304px 203px;
+    background-size: cover, 396px 596px, cover;
   }
 }
 
@@ -74,6 +74,7 @@
 .features-wrap {
   display: flex;
 }
+
 .features-list {
   display: flex;
 
@@ -82,9 +83,12 @@
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    width: 90%;
+    flex-direction: column;
     align-items: flex-end;
+    width: 100%;
+    gap: 80px;
   }
+
   @media screen and (min-width: 1200px) {
     justify-content: space-between;
     align-items: baseline;
@@ -92,14 +96,16 @@
 }
 
 .features-list-one {
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     margin-top: 489px;
     margin-bottom: 24px;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin-top: 40px;
-    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
   }
   @media screen and (min-width: 1200px) {
     margin-right: 492px;
@@ -107,15 +113,30 @@
 }
 
 .features-list-two {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+  }
 }
 
 .features-item {
   max-width: 220px;
   display: flex;
   flex-direction: column;
-
-  /* position: relative; */
 }
+
+.features-tablet {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    position: absolute;
+    left: -417px;
+    top: 183px;
+  }
+}
+
+/* position: relative; */
+
 /* позиціонування маркера через абсолют */
 /* .features-icon {
   position: absolute;
@@ -126,9 +147,7 @@
   @media screen and (max-width: 767px) {
     margin-bottom: 24px;
   }
-  @media screen and (min-width: 768px) {
-    margin-bottom: 80px;
-  }
+
   @media screen and (min-width: 1200px) {
     margin-bottom: 80px;
   }
