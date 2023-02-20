@@ -4,8 +4,9 @@
   padding-bottom: 122px;
   margin: auto;
 
-  background-image: url(/images/mobile-spraying-bg.png),
-    url(/images/mobile-spraying-small-bg.png), url(/images/mobile-phone-bg.png),
+  background-image: url(./images/mobile-spraying-bg.png),
+    url(./images/mobile-spraying-small-bg.png),
+    url(./images/mobile-phone-bg.png),
     linear-gradient(to right, rgba(6, 7, 27, 1), rgba(6, 7, 27, 1));
   background-size: 499px 52px, 144px 71px, 395px 430px, 100% 568px;
   background-repeat: no-repeat;
@@ -16,9 +17,9 @@
     screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 767px),
     screen and (min-resolution: 192dpi) and (max-width: 767px),
     screen and (min-resolution: 2dppx) and (max-width: 767px) {
-    background-image: url(/images/mobile-spraying-bg@2x.png),
-      url(/images/mobile-spraying-small-bg@2x.png),
-      url(/images/mobile-phone-bg@2x.png),
+    background-image: url(./images/mobile-spraying-bg@2x.png),
+      url(./images/mobile-spraying-small-bg@2x.png),
+      url(./images/mobile-phone-bg@2x.png),
       linear-gradient(to right, rgba(6, 7, 27, 1), rgba(6, 7, 27, 1));
   }
 
@@ -27,8 +28,8 @@
     padding-top: 142px;
     padding-bottom: 143px;
 
-    background-image: url(/images/tablet-spraying-bg.png),
-      url(/images/tablet-decor-bg.png), url(/images/tablet-phone-bg.png),
+    background-image: url(./images/tablet-spraying-bg.png),
+      url(./images/tablet-decor-bg.png), url(./images/tablet-phone-bg.png),
       linear-gradient(to right, rgba(6, 7, 27, 1), rgba(6, 7, 27, 1));
     background-size: 291px 58px, 362px 352px, 336px 382px, 100% 640px;
     background-repeat: no-repeat;
@@ -39,8 +40,9 @@
       screen and (-webkit-min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
-      background-image: url(/images/tablet-spraying-bg@2x.png),
-        url(/images/tablet-decor-bg@2x.png), url(/images/tablet-phone-bg@2x.png),
+      background-image: url(./images/tablet-spraying-bg@2x.png),
+        url(./images/tablet-decor-bg@2x.png),
+        url(./images/tablet-phone-bg@2x.png),
         linear-gradient(to right, rgba(6, 7, 27, 1), rgba(6, 7, 27, 1));
     }
   }
@@ -50,8 +52,8 @@
     padding-top: 243px;
     padding-bottom: 146px;
 
-    background-image: url(/images/spraying-bg.png), url(/images/decor-bg.png),
-      url(/images/phone-bg.png),
+    background-image: url(./images/spraying-bg.png), url(./images/decor-bg.png),
+      url(./images/phone-bg.png),
       linear-gradient(to right, rgba(6, 7, 27, 1), rgba(6, 7, 27, 1));
     background-size: 213px 29px, 541px 418px, 472px 553px, 100% 744px;
     background-repeat: no-repeat;
@@ -63,8 +65,8 @@
     screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px),
     screen and (min-resolution: 192dpi) and (min-width: 1200px),
     screen and (min-resolution: 2dppx) and (min-width: 1200px) {
-    background-image: url(/images/spraying-bg@2x.png),
-      url(/images/decor-bg@2x.png), url(/images/phone-bg@2x.png),
+    background-image: url(./images/spraying-bg@2x.png),
+      url(./images/decor-bg@2x.png), url(./images/phone-bg@2x.png),
       linear-gradient(to right, rgba(6, 7, 27, 1), rgba(6, 7, 27, 1));
   }
 }

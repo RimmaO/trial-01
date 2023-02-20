@@ -754,14 +754,14 @@ img {
   padding-top: 182px;
   padding-bottom: 122px;
   margin: auto;
-  background-image: url(/images/mobile-spraying-bg.png), url(/images/mobile-spraying-small-bg.png), url(/images/mobile-phone-bg.png), linear-gradient(to right, rgb(6, 7, 27), rgb(6, 7, 27));
+  background-image: url(./images/mobile-spraying-bg.png), url(./images/mobile-spraying-small-bg.png), url(./images/mobile-phone-bg.png), linear-gradient(to right, rgb(6, 7, 27), rgb(6, 7, 27));
   background-size: 499px 52px, 144px 71px, 395px 430px, 100% 568px;
   background-repeat: no-repeat;
   background-position: right 90% top 100px, left 80% bottom 130px, right -50% top 100px, top;
 }
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px), screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 767px), screen and (min-resolution: 192dpi) and (max-width: 767px), screen and (min-resolution: 2dppx) and (max-width: 767px) {
   .hero {
-    background-image: url(/images/mobile-spraying-bg@2x.png), url(/images/mobile-spraying-small-bg@2x.png), url(/images/mobile-phone-bg@2x.png), linear-gradient(to right, rgb(6, 7, 27), rgb(6, 7, 27));
+    background-image: url(./images/mobile-spraying-bg@2x.png), url(./images/mobile-spraying-small-bg@2x.png), url(./images/mobile-phone-bg@2x.png), linear-gradient(to right, rgb(6, 7, 27), rgb(6, 7, 27));
   }
 }
 @media screen and (min-width: 768px) {
@@ -769,7 +769,7 @@ img {
     height: 580px;
     padding-top: 142px;
     padding-bottom: 143px;
-    background-image: url(/images/tablet-spraying-bg.png), url(/images/tablet-decor-bg.png), url(/images/tablet-phone-bg.png), linear-gradient(to right, rgb(6, 7, 27), rgb(6, 7, 27));
+    background-image: url(./images/tablet-spraying-bg.png), url(./images/tablet-decor-bg.png), url(./images/tablet-phone-bg.png), linear-gradient(to right, rgb(6, 7, 27), rgb(6, 7, 27));
     background-size: 291px 58px, 362px 352px, 336px 382px, 100% 640px;
     background-repeat: no-repeat;
     background-position: left 12% top 221px, left 37% top 227px, right 7% top 182px, top;
@@ -777,7 +777,7 @@ img {
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url(/images/tablet-spraying-bg@2x.png), url(/images/tablet-decor-bg@2x.png), url(/images/tablet-phone-bg@2x.png), linear-gradient(to right, rgb(6, 7, 27), rgb(6, 7, 27));
+    background-image: url(./images/tablet-spraying-bg@2x.png), url(./images/tablet-decor-bg@2x.png), url(./images/tablet-phone-bg@2x.png), linear-gradient(to right, rgb(6, 7, 27), rgb(6, 7, 27));
   }
 }
 @media screen and (min-width: 1200px) {
@@ -785,7 +785,7 @@ img {
     height: 684px;
     padding-top: 243px;
     padding-bottom: 146px;
-    background-image: url(/images/spraying-bg.png), url(/images/decor-bg.png), url(/images/phone-bg.png), linear-gradient(to right, rgb(6, 7, 27), rgb(6, 7, 27));
+    background-image: url(./images/spraying-bg.png), url(./images/decor-bg.png), url(./images/phone-bg.png), linear-gradient(to right, rgb(6, 7, 27), rgb(6, 7, 27));
     background-size: 213px 29px, 541px 418px, 472px 553px, 100% 744px;
     background-repeat: no-repeat;
     background-position: left 20% top 309px, left 50% top 227px, right 10% top 222px, top;
@@ -793,7 +793,7 @@ img {
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   .hero {
-    background-image: url(/images/spraying-bg@2x.png), url(/images/decor-bg@2x.png), url(/images/phone-bg@2x.png), linear-gradient(to right, rgb(6, 7, 27), rgb(6, 7, 27));
+    background-image: url(./images/spraying-bg@2x.png), url(./images/decor-bg@2x.png), url(./images/phone-bg@2x.png), linear-gradient(to right, rgb(6, 7, 27), rgb(6, 7, 27));
   }
 }
 
@@ -861,7 +861,7 @@ img {
   padding-bottom: 40px;
   margin: 0 auto;
   background-color: #ffffff;
-  background-image: url(/images/mobile-feature.png);
+  background-image: url(./images/mobile-feature.png);
   background-position: top 264px center;
   background-repeat: no-repeat;
   background-size: 280px 406px;
@@ -870,7 +870,7 @@ img {
   .features {
     padding-top: 100px;
     padding-bottom: 80px;
-    background-image: url(/images/tablet-feature.png);
+    background-image: url(./images/tablet-feature.png);
     background-position: top 289px left 30px;
     background-repeat: no-repeat;
     background-size: 406px 614px;
@@ -879,7 +879,7 @@ img {
 @media screen and (min-width: 1200px) {
   .features {
     padding-bottom: 105px;
-    background-image: url(../images/vector-1.png), url(../images/feature.png), url(../images/vector-2.png);
+    background-image: url(./images/vector-1.png), url(./images/feature.png), url(./images/vector-2.png);
     background-position: left 20% top 75%, left 50% top 80%, right 20% bottom 70%;
     background-repeat: no-repeat;
     background-size: cover, 396px 596px, cover;
@@ -1028,7 +1028,7 @@ img {
   content: "";
   width: 24px;
   height: 24px;
-  background-image: url(../images/marker.png);
+  background-image: url(./images/marker.png);
   margin-top: -1px;
   margin-left: -35px;
   background-size: cover;
@@ -1047,7 +1047,7 @@ img {
   height: 629px;
   margin: auto;
   background-color: #06071b;
-  background-image: url(/images/mobile-spraying-1.png), url(/images/mobile-video.png);
+  background-image: url(./images/mobile-spraying-1.png), url(./images/mobile-video.png);
   background-repeat: no-repeat;
   background-size: 100% 296px, 266px 128px;
   background-position: top 320px center, top 396px center;
@@ -1056,7 +1056,7 @@ img {
   .video {
     padding-top: 80px;
     padding-bottom: 70px;
-    background-image: url(/images/tablet-spraying-1.png), url(/images/tablet-video.png);
+    background-image: url(./images/tablet-spraying-1.png), url(./images/tablet-video.png);
     background-repeat: no-repeat;
     background-size: 363px 418px, 382px 184px;
     background-position: top 257px center, top 334px center;
@@ -1066,7 +1066,7 @@ img {
   .video {
     padding-top: 60px;
     padding-bottom: 98px;
-    background-image: url(../images/spraying-1.png), url(../images/spraying-2.png), url(../images/video.png);
+    background-image: url(./images/spraying-1.png), url(./images/spraying-2.png), url(./images/video.png);
     background-repeat: no-repeat;
     background-size: 420px 508px, 291px 58px, 501px 282px;
     background-position: right 10% top 15%, right 80% top 40%, right 6% top 55%;
