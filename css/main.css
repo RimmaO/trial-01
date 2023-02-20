@@ -1663,12 +1663,14 @@ img {
 @media screen and (min-width: 768px) {
   .footer-contacts-input,
   .footer-contacts-message {
+    display: block;
     width: 336px;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer-contacts-input,
   .footer-contacts-message {
+    display: block;
     width: 288px;
   }
 }

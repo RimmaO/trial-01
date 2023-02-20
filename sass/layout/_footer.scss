@@ -238,9 +238,11 @@
     margin-right: auto;
   }
   @media screen and (min-width: 768px) {
+    display: block;
     width: 336px;
   }
   @media screen and (min-width: 1200px) {
+    display: block;
     width: 288px;
   }
 }
