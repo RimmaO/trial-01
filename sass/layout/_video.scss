@@ -5,8 +5,8 @@
   margin: auto;
 
   background-color: #06071b;
-  background-image: url(./images/mobile-spraying-1.png),
-    url(./images/mobile-video.png);
+  background-image: url(../images/mobile-spraying-1.png),
+    url(../images/mobile-video.png);
   background-repeat: no-repeat;
   background-size: 100% 296px, 266px 128px;
   background-position: top 320px center, top 396px center;
@@ -15,19 +15,19 @@
     padding-top: 80px;
     padding-bottom: 70px;
 
-    background-image: url(./images/tablet-spraying-1.png),
-      url(./images/tablet-video.png);
+    background-image: url(../images/tablet-spraying-1.png),
+      url(../images/tablet-spraying-2.png), url(../images/tablet-video.png);
     background-repeat: no-repeat;
     background-size: 363px 418px, 382px 184px;
-    background-position: top 257px center, top 334px center;
+    background-position: top 257px center, right 80% top 40%, top 334px center;
   }
 
   @media screen and (min-width: 1200px) {
     padding-top: 60px;
     padding-bottom: 98px;
 
-    background-image: url(./images/spraying-1.png),
-      url(./images/spraying-2.png), url(./images/video.png);
+    background-image: url(../images/spraying-1.png),
+      url(../images/spraying-2.png), url(../images/video.png);
     background-repeat: no-repeat;
     background-size: 420px 508px, 291px 58px, 501px 282px;
     background-position: right 10% top 15%, right 80% top 40%, right 6% top 55%;
