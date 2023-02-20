@@ -8,7 +8,7 @@
     url(../images/mobile-spraying-small-bg.png),
     url(../images/mobile-phone-bg.png),
     linear-gradient(to right, rgba(6, 7, 27, 1), rgba(6, 7, 27, 1));
-  background-size: 499px 52px, 144px 71px, 395px 430px, 100% 568px;
+  background-size: cover, cover, 395px 430px, 100% 568px;
   background-repeat: no-repeat;
   background-position: right 90% top 100px, left 80% bottom 130px,
     right -50% top 100px, top;
@@ -52,13 +52,13 @@
     padding-top: 243px;
     padding-bottom: 146px;
 
-    background-image: url(../images/spraying-bg.png), url(./images/decor-bg.png),
-      url(../images/phone-bg.png),
+    background-image: url(../images/spraying-bg.png),
+      url(../images/decor-bg.png), url(../images/phone-bg.png),
       linear-gradient(to right, rgba(6, 7, 27, 1), rgba(6, 7, 27, 1));
     background-size: 213px 29px, 541px 418px, 472px 553px, 100% 744px;
     background-repeat: no-repeat;
     background-position: left 20% top 309px, left 50% top 227px,
-      right 10% top 222px, top;
+      right 10% top 187px, top;
   }
 
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
