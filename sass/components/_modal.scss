@@ -211,13 +211,3 @@
   line-height: calc(15 / 12);
   color: #1ab9fd;
 }
-
-.modal-btn {
-  @media screen and (max-width: 767px) {
-    width: 100%;
-  }
-  @media screen and (min-width: 767px) {
-    margin-left: auto;
-    margin-right: auto;
-  }
-}

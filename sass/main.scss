@@ -1,6 +1,7 @@
 @import "./utils/variables";
 
 @import "./base/normalize";
+@import "./base/fonts";
 @import "./base/common";
 @import "./base/container";
 
@@ -8,6 +9,7 @@
 @import "./components/button";
 @import "./components/backdrop";
 @import "./components/modal";
+@import "./components/form";
 
 @import "./layout/header";
 @import "./layout/hero";

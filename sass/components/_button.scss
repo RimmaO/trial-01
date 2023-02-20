@@ -33,3 +33,47 @@
     min-width: 200px;
   }
 }
+
+.footer-btn {
+  min-width: 180px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin-bottom: 40px;
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+
+  border-radius: 5px;
+  color: $second-color;
+  background-image: $gra;
+  transition: background-image 1500ms linear;
+
+  &:is(:hover, :focus) {
+    border: 1px solid transparent;
+    background-image: $gra;
+    box-shadow: inset 0px 0px 0px 100vw #06071b;
+    border-radius: 5px;
+  }
+
+  @media screen and (max-width: 1199px) {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 79px;
+  }
+}
+
+.modal-btn {
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
+  @media screen and (min-width: 767px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
