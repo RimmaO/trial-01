@@ -10,16 +10,12 @@
   background-image: $gra;
 
   @media screen and (min-width: 768px) {
-    padding-left: 32px;
-    padding-right: 32px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     top: 26px;
     padding-top: 19px;
     padding-bottom: 19px;
-    padding-left: 16px;
-    padding-right: 16px;
   }
 }
 
@@ -45,7 +41,7 @@
   @media screen and (min-width: 768px) {
     margin-right: 128px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     margin-right: auto;
   }
 }

@@ -47,7 +47,7 @@
     }
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     height: 684px;
     padding-top: 243px;
     padding-bottom: 146px;
@@ -61,10 +61,10 @@
       right 10% top 187px, top;
   }
 
-  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
-    screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px),
-    screen and (min-resolution: 192dpi) and (min-width: 1200px),
-    screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1280px),
+    screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1280px),
+    screen and (min-resolution: 192dpi) and (min-width: 1280px),
+    screen and (min-resolution: 2dppx) and (min-width: 1280px) {
     background-image: url(../images/spraying-bg@2x.png),
       url(../images/decor-bg@2x.png), url(../images/phone-bg@2x.png),
       linear-gradient(to right, rgba(6, 7, 27, 1), rgba(6, 7, 27, 1));
